@@ -3,7 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>iSPEED起動</title>
-<meta http-equiv="refresh" content="0; url=ispeed://jp.co.rakuten-sec.ispeed.v2/stock/detail?code=9432&amp;market=T">
+<script>
+    // ページを開いたら即 iSPEED を起動
+    window.onload = function() {
+        window.location.href = "ispeed://jp.co.rakuten-sec.ispeed.v2/stock/detail?code=9432&market=T";
+    };
+</script>
 </head>
 <body>
 <p>iSPEEDを起動しています…</p>
